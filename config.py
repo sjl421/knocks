@@ -31,10 +31,10 @@ class ProdConfig(Config):
     HOST = '0.0.0.0'
 
     # 数据库配置
-    MYSQL_HOST = '120.77.179.66'
-    MYSQL_PORT = 33945
-    MYSQL_USER = 'lyy'
-    MYSQL_PASS = 'Hrt@2017'
+    MYSQL_HOST = 'localhost'
+    MYSQL_PORT = 3306
+    MYSQL_USER = 'root'
+    MYSQL_PASS = ''
 
 
 
