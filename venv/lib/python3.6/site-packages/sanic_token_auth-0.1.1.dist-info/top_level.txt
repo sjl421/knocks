@@ -1,0 +1,2 @@
+example
+sanic_token_auth

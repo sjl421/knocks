@@ -1,0 +1,107 @@
+
+    <html>
+        <head>
+            
+    <style>
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .summary {
+            padding: 10px;
+        }
+
+        h1 {
+            margin-bottom: 0;
+        }
+
+        h3 {
+            margin-top: 10px;
+        }
+
+        h3 code {
+            font-size: 24px;
+        }
+
+        .frame-line > * {
+            padding: 5px 10px;
+        }
+
+        .frame-line {
+            margin-bottom: 5px;
+        }
+
+        .frame-code {
+            font-size: 16px;
+            padding-left: 30px;
+        }
+
+        .tb-wrapper {
+            border: 1px solid #f3f3f3;
+        }
+
+        .tb-header {
+            background-color: #f3f3f3;
+            padding: 5px 10px;
+        }
+
+        .tb-border {
+            padding-top: 20px;
+        }
+
+        .frame-descriptor {
+            background-color: #e2eafb;
+        }
+
+        .frame-descriptor {
+            font-size: 14px;
+        }
+    </style>
+
+        </head>
+        <body>
+            
+    <h1>TypeError</h1>
+    <h3><code>sequence item 0: expected str instance, list found</code></h3>
+    <div class="tb-wrapper">
+        <p class="tb-header">Traceback (most recent call last):</p>
+        
+    <div class="frame-line">
+        <p class="frame-descriptor">
+            File /Users/liaoyangyang/crc/knocks/venv/lib/python3.6/site-packages/sanic/app.py, line <i>554</i>,
+            in <code><b>handle_request</b></code>
+        </p>
+        <p class="frame-code"><code>response = handler(request, *args, **kwargs)</code></p>
+    </div>
+
+    <div class="frame-line">
+        <p class="frame-descriptor">
+            File /Users/liaoyangyang/crc/knocks/knocks/route/api_urls.py, line <i>44</i>,
+            in <code><b>api_table_demo_post</b></code>
+        </p>
+        <p class="frame-code"><code>content = setData(request,table_name,request.form)</code></p>
+    </div>
+
+    <div class="frame-line">
+        <p class="frame-descriptor">
+            File /Users/liaoyangyang/crc/knocks/knocks/models/datatable.py, line <i>45</i>,
+            in <code><b>setData</b></code>
+        </p>
+        <p class="frame-code"><code>sql = "insert into {0}({1}) VALUES({2})".format(table_name,','.join(cols),','.join(vals))</code></p>
+    </div>
+
+    </div>
+
+            <div class="summary">
+                <p>
+                <b>TypeError: sequence item 0: expected str instance, list found</b>
+                    while handling path <code>/api/datatable/table_demo/post</code>
+                </p>
+            </div>
+        </body>
+    </html>

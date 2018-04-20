@@ -1,0 +1,92 @@
+{% include 'base/head.html'  %}
+{% include 'base/navbar.html'  %}
+<body>
+
+<div id="wrapper">
+    <div id="page-wrapper" class="gray-bg">
+    {% include 'base/navigation.html'  %}
+    <div class="wrapper wrapper-content animated fadeIn">
+
+        <div class="row">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>表格脚手架</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#">Config option 1</a>
+                            </li>
+                            <li><a href="#">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="alert alert-success">
+                        ps:点击导入模版excel,并将你的模版excle上传,可生成一个表格页面，有增删改查，导入导出的权限。
+                    </div>
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <p></p>
+                            <button id="btn_import" class="btn btn-primary" onclick="file()">导入模版excle</button>
+                            <p></p>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr id="th">
+                                        <th>#</th>
+                                        <th>col_1</th>
+                                        <th>col_2</th>
+                                        <th>col_3</th>
+                                        <th>col_4</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    <tr id="td">
+                                        <td>1</td>
+                                        <td>val_1</td>
+                                        <td>val_2</td>
+                                        <td>val_3</td>
+                                        <td>val_4</td>
+                                        <td><a href="">edit</a> | <a href="">del</a></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+                            <pre id="show" hidden></pre>
+
+                        </div>
+
+
+
+
+
+                        <div class="col-lg-6">
+                            <p>输出：</p>
+                            <pre id="output" style="background: #1a2d41;color: green;height: 400px;"></pre>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+
+<script src="../../static/js/scaffold/index.js"></script>
+
+</html>

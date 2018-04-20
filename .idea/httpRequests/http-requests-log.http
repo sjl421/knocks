@@ -1,0 +1,254 @@
+DELETE http://localhost:10100/api/datatable/table_demo/delete?业务名称=123&微服务名称=234&id=348
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T103110.200.json
+
+###
+
+DELETE http://localhost:10100/api/datatable/table_demo/delete?业务名称=123&微服务名称=234&id=348
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T102946.200.json
+
+###
+
+DELETE http://localhost:10100/api/datatable/table_demo/delete?业务名称=123&微服务名称=234&id=348
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T102926.200.json
+
+###
+
+PUT http://localhost:10100/api/datatable/table_demo/put?业务名称=123&微服务名称=234&id=348
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T093824.200.json
+
+###
+
+PUT http://localhost:10100/api/datatable/table_demo/put?业务名称=123&微服务名称=234&id=348
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T093715.200.json
+
+###
+
+PUT http://localhost:10100/api/datatable/table_demo/put?业务名称=123&微服务名称=234&id=348
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T093555.200.json
+
+###
+
+PUT http://localhost:10100/api/datatable/table_demo/put?业务名称=123&微服务名称=234&id=348
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T093422.200.json
+
+###
+
+PUT http://localhost:10100/api/datatable/table_demo/put?业务名称=123&微服务名称=234&id=348
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T093214.200.json
+
+###
+
+PUT http://localhost:10100/api/datatable/table_demo/put?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T092337.200.json
+
+###
+
+PUT http://localhost:10100/api/datatable/table_demo/put?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T092250.500.html
+
+###
+
+PUT http://localhost:10100/api/datatable/table_demo/put?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T091543.200.json
+
+###
+
+PUT http://localhost:10100/api/datatable/table_demo/put?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T091341.200.json
+
+###
+
+PUT http://localhost:10100/api/datatable/table_demo/put?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T091326.200.json
+
+###
+
+PUT http://localhost:10100/api/datatable/table_demo/put?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T091253.200.json
+
+###
+
+POST http://localhost:10100/api/datatable/table_demo/post?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T090241.200.json
+
+###
+
+POST http://localhost:10100/api/datatable/table_demo/post?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T090227.200.txt
+
+###
+
+POST http://localhost:10100/api/datatable/table_demo/post?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T085809.200.json
+
+###
+
+POST http://localhost:10100/api/datatable/table_demo/post?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T085555.200.txt
+
+###
+
+POST http://localhost:10100/api/datatable/table_demo/post?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T085454.200.txt
+
+###
+
+POST http://localhost:10100/api/datatable/table_demo/post?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T085430.500.html
+
+###
+
+POST http://localhost:10100/api/datatable/table_demo/post?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T085402.500.html
+
+###
+
+POST http://localhost:10100/api/datatable/table_demo/post?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T085255.500.html
+
+###
+
+POST http://localhost:10100/api/datatable/table_demo/post?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T085144.500.html
+
+###
+
+POST http://localhost:10100/api/datatable/table_demo/post?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T084702.200.txt
+
+###
+
+POST http://localhost:10100/api/datatable/table_demo/post?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T083950.200.txt
+
+###
+
+POST http://localhost:10100/api/datatable/table_demo/post?业务名称=123&微服务名称=234
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T083928.200.txt
+
+###
+
+POST http://localhost:10100/api/datatable/table_demo/post?业务名称=123
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T083846.200.txt
+
+###
+
+POST http://localhost:10100/api/datatable/table_demo/post
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-04-19T083749.200.txt
+
+###
+
+POST http://localhost:10101/api/datatable/table_demo/post
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:10101/api/datatable/table_demo/post
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:10101/api/datatable/table_demo/post
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:10101/api/datatable/table_demo/post
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:10101/datatable/table_demo/post
+Accept:*/*
+Cache-Control:no-cache
+
+###
+

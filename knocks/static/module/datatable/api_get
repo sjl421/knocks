@@ -1,0 +1,6 @@
+@blueprint.get('/$comefrom/$project/get')
+def api_$project_get(request):
+    table_name ='$table_name'
+    sql = 'select * from $table_name ;'
+    content = getData(request,sql,table_name)
+    return json({'content':content,'table_name':table_name})

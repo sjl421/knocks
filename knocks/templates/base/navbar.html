@@ -1,0 +1,98 @@
+
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" style="height: 40px;width: 40px;" class="img-circle" src="../../static/img/IMG_4390.PNG" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold" id="username">David Williams</strong>
+                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="mailbox.html">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/logout">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+
+                <li class="nav">
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">页面自动生成</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="/scaffold/index">表格类页面</a></li>
+                    </ul>
+                </li>
+
+
+                 <li class="nav">
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">示例</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="/datatable/demo">表格类页面demo</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+<script>
+
+     $(document).ready(function () {
+
+        $('li a').each(function () {
+            if($(this).attr('href') == window.location.pathname){
+                this.parentNode.className = 'active';
+                this.parentNode.parentNode.className = 'nav nav-second-level collapse in';
+                this.parentNode.parentNode.parentNode.className= 'active';
+            }
+        });
+
+
+        if(GetQueryString('username')){
+            setCookie('username',GetQueryString('username'));
+        }
+
+        $('#username').html( getCookie('username'));
+
+
+     });
+
+     //写cookies
+    function setCookie(name,value)
+    {
+    var Days = 1;
+    var exp = new Date();
+    exp.setTime(exp.getTime() + Days*24*60*60*1000);
+    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+";path=/";
+    }
+     //读取参数
+    function GetQueryString(name)
+    {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+    }
+
+    //读取cookie
+    function getCookie(name)
+    {
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg))
+    return unescape(arr[2]);
+    else
+    return null;
+    }
+
+
+</script>
+
+    

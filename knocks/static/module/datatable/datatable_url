@@ -1,0 +1,6 @@
+@blueprint.get("/$project", strict_slashes=True)
+def datatable_$project(request):
+    table_name = '$table_name'
+    content = getData(request,table_name)
+    base_url = request.scheme+'://'+request.host
+    return  template('/datatable/$project.html', title='$project',content=content,table_name=table_name,base_url=base_url)

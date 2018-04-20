@@ -1,0 +1,116 @@
+{% include 'base/head.html'  %}
+<link href="../../static/css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+<body>
+
+    <div id="wrapper">
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox-content">
+                        <div  class="alert alert-success" >以下为API接口使用说明：<br>
+                            1、get方法为获取所有数据.<br>
+                            2、post新增一行数据,id自增,无需插入。<br>
+                            3、put通过主键id去修改字段的内容.<br>
+                            4、delete通过主键id去删除一行内容。 </a></div>
+                        {% for item in content.apis.keys() %}
+                            <pre>{{ item }}方法的API地址为：{{ base_url }}{{ content.apis[item] }}</pre>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                        <h5>{{ '_'.join(table_name.split('_')[1:]) }}</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                        <div class="ibox-content">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover dataTables-example" >
+                                    <div id="alter" class="alert alert-success" hidden>
+                                    </div>
+                                    <button class="btn btn-primary" type="button" onclick="importexcel('{{ table_name }}')">导入数据</button>
+                                    <span> </span>
+                                    <div class="btn-group">
+                                        <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">生成RestAPI接口<span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" onclick="addrestapi('{{ table_name }}','all')">全部</a></li>
+                                            <li class="divider" id="menu_restapi"></li>
+
+                                        </ul>
+                                    </div>
+                                    <span> </span>
+                                    <div class="btn-group">
+                                        <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">按字段计数<span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            {% for col in content.cols %}
+                                            <li><a href="#" onclick="searchbycol('{{ col }}','{{ table_name }}')">{{ col }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                    <span> </span>
+                                    <button class="btn btn-primary" type="button" onclick="searchbysql('{{ table_name }}')">按自定义sql查询</button>
+                                    <p></p>
+
+                                    <thead id="table_thead">
+                                        <tr>
+                                            {% for col in content.cols %}
+                                                <th>{{ col }}</th>
+                                            {% endfor %}
+                                                <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table_tbody">
+                                        {% for val in content['values'] %}
+                                        <tr>
+                                            {% for col in content.cols %}
+                                                <td>{{ val[col] }}</td>
+                                            {% endfor %}
+                                                <td><a href="">Edit</a> | <a href="">Del</a></td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../static/js/plugins/jeditable/jquery.jeditable.js"></script>
+    <script src="../../static/js/plugins/dataTables/datatables.min.js"></script>
+    <script src="../../static/js/datatables/tables.js"></script>
+
+    <!-- Page-Level Scripts -->
+    <script>
+
+        $(document).ready(function(){
+            initdatatable();
+            menu_restapi('{{ table_name }}');
+        });
+
+
+
+    </script>
+
+

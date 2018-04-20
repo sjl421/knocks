@@ -1,0 +1,6 @@
+@blueprint.post('/$comefrom/$project/post')
+def api_$project_post(request):
+    table_name = '$table_name'
+    from knocks.models.datatable import setData
+    content = setData(request,table_name,request.form)
+    return json({'content': content, 'table_name': table_name})
