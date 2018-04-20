@@ -12,6 +12,7 @@ from knocks.route.scaffold_urls import blueprint as scaffold_blueprint
 from knocks.route.table_urls import blueprint as table_blueprint
 from knocks.route.search_urls import blueprint as search_blueprint
 from knocks.route.api_urls import blueprint as api_blueprint
+from knocks.route.web_urls import blueprint as web_blueprint
 from sanic.exceptions import NotFound
 from sanic_token_auth import SanicTokenAuth
 from sanic.response import text,html
@@ -27,6 +28,7 @@ app.static('/static',DevConfig.BASE_DIR+'/knocks/static')
 
 
 
+app.blueprint(web_blueprint)
 app.blueprint(scaffold_blueprint)
 app.blueprint(table_blueprint)
 app.blueprint(api_blueprint)

@@ -14,6 +14,7 @@
 * 需要执行creation.sql
 * 启动  python run.py
 * 首页  http://localhost:10100/scaffold/index#
+* 生成新的页面后需要重启项目
 
 ### 目录简介
 ```
