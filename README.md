@@ -13,6 +13,7 @@
 * 需要执行 pip install -r requirements.txt
 * 需要执行creation.sql
 * 启动  python run.py
+* 首页  http://localhost:10100/scaffold/index#
 
 ### 目录简介
 ```
